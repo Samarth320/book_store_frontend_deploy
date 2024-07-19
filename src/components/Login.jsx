@@ -13,7 +13,7 @@ function Login() {
       password : data.password
     }
 
-    await axios.post("https://book-store-backend-deploy-1.onrender.com/user/login",userInfo)
+    await axios.post("https://book-store-backend-deploy.onrender.com/user/login",userInfo)
     .then((res)=>{
       console.log(res.data)
       if(res.data){

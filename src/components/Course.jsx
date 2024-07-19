@@ -10,7 +10,7 @@ function Course() {
     useEffect(()=>{
         const getData = async()=>{
             try{
-               const res = await axios.get("https://book-store-backend-deploy-1.onrender.com/book")
+               const res = await axios.get("https://book-store-backend-deploy.onrender.com/book")
                console.log("printing course data")
                console.log(res.data)
                setBookData(res.data)
